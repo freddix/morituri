@@ -1,7 +1,7 @@
 Summary:	CD ripper aiming for accuracy over speed
 Name:		morituri
 Version:	0.2.0
-Release:	1
+Release:	2
 License:	GPL v3
 Group:		Applications
 Source0:	http://thomas.apestaart.org/download/morituri/%{name}-%{version}.tar.bz2
@@ -14,9 +14,9 @@ Requires:	cdrdao
 Requires:	gstreamer010-plugins-base
 Requires:	python-gstreamer010
 Requires:	python-musicbrainz2
-Requires:	python-pycdio
-# not sure why this is a runtime dependency
 Requires:	python-setuptools
+# see https://github.com/thomasvs/morituri/issues/5
+# Suggests:	python-pycdio
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
