@@ -12,6 +12,7 @@ BuildRequires:	rpm-pythonprov
 Requires:	cdparanoia-III
 Requires:	cdrdao
 Requires:	gstreamer010-plugins-base
+Requires:	python-cddb
 Requires:	python-gstreamer010
 Requires:	python-musicbrainz2
 Requires:	python-setuptools
