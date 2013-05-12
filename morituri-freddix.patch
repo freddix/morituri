@@ -1,0 +1,14 @@
+diff -aurN morituri-0.2.0.orig/morituri/common/encode.py morituri-0.2.0/morituri/common/encode.py
+--- morituri-0.2.0.orig/morituri/common/encode.py	2013-05-12 22:34:01.897801543 +0200
++++ morituri-0.2.0/morituri/common/encode.py	2013-05-12 22:34:53.304258338 +0200
+@@ -117,8 +117,8 @@
+ 
+ class VorbisProfile(Profile):
+     name = 'vorbis'
+-    extension = 'oga'
+-    pipeline = 'audioconvert ! vorbisenc name=tagger ! oggmux'
++    extension = 'ogg'
++    pipeline = 'audioconvert ! vorbisenc name=tagger quality=0.4 ! oggmux'
+     lossless = False
+ 
+ 

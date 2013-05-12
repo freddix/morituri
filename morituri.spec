@@ -1,11 +1,12 @@
 Summary:	CD ripper aiming for accuracy over speed
 Name:		morituri
 Version:	0.2.0
-Release:	2
+Release:	3
 License:	GPL v3
 Group:		Applications
 Source0:	http://thomas.apestaart.org/download/morituri/%{name}-%{version}.tar.bz2
 # Source0-md5:	0766778054ff9fbb98effd08130c7e98
+Patch0:		%{name}-freddix.patch
 URL:		http://thomas.apestaart.org/thomas/trac/wiki/DAD/Rip
 BuildRequires:	python
 BuildRequires:	rpm-pythonprov
@@ -27,6 +28,8 @@ Its features are modeled to compare with Exact Audio Copy on Windows.
 
 %prep
 %setup -q
+# tune vorbis encoding a bit
+%patch0 -p1
 
 %build
 %configure
