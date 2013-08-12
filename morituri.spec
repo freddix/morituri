@@ -1,7 +1,7 @@
 Summary:	CD ripper aiming for accuracy over speed
 Name:		morituri
 Version:	0.2.2
-Release:	1
+Release:	2
 License:	GPL v3
 Group:		Applications
 Source0:	http://thomas.apestaart.org/download/morituri/%{name}-%{version}.tar.bz2
