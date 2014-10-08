@@ -1,14 +1,15 @@
 Summary:	CD ripper aiming for accuracy over speed
 Name:		morituri
-Version:	0.2.2
-Release:	2
+Version:	0.2.3
+Release:	1
 License:	GPL v3
 Group:		Applications
 Source0:	http://thomas.apestaart.org/download/morituri/%{name}-%{version}.tar.bz2
-# Source0-md5:	c092aeba22483ce59842b6134b8d4d38
+# Source0-md5:	9587255fc9b357942e700b9fda4c6ddf
 Patch0:		%{name}-freddix.patch
 URL:		http://thomas.apestaart.org/thomas/trac/wiki/DAD/Rip
 BuildRequires:	python
+BuildRequires:	python-setuptools
 BuildRequires:	rpm-pythonprov
 Requires:	cdparanoia-III
 Requires:	cdrdao
